@@ -41,15 +41,34 @@ main {
   border-bottom: 2px solid #ac252b;
 }
 
+.training h1 {
+  color: #ac252b;
+}
+
 .training:last-of-type {
   border-bottom: none;
 }
 
 .training-img {
-  min-width: 500px !important;
+  min-width: 500px;
   height: 250px;
 }
 
 .training:nth-child(even) img {
   order: 1;
+}
+
+@media (max-width: 864px) {
+  .training {
+    flex-direction: column;
+  }
+  .training-img {
+    max-width: 100%;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .training:nth-child(even) img {
+    order: 0;
+  }
 }
