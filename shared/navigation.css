@@ -33,6 +33,11 @@ header a {
   /* color: white; */
 }
 
+header a:hover,
+.dropbtn:hover {
+  color: #ac252b;
+}
+
 header nav {
   display: flex;
   gap: 1rem;
@@ -58,6 +63,10 @@ header nav {
   z-index: 1;
   padding-block: 1.5rem;
   padding-inline: 0.8rem;
+}
+
+.dropdown-content a {
+  margin-block: 4px;
 }
 
 .drop-down:hover .dropdown-content {
