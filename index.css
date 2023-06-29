@@ -157,28 +157,6 @@ footer {
   border-bottom: 2px solid #ac252b;
 }
 
-footer {
-  background-color: #db1a24;
-  /* background-color: #d86733; */
-  display: flex;
-  justify-content: space-around;
-  padding-block: 4rem;
-  /* margin-top: 40px; */
-}
-
-.initiatives-quicklink {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-info {
-  /* padding-block: 24px; */
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
 @media (max-width: 864px) {
   .intro-section {
     padding-top: 48px;
