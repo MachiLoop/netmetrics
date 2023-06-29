@@ -4,3 +4,52 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+
+main {
+  margin-bottom: 150px;
+  background-color: #f8f7f3;
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+}
+
+.training-intro {
+  /* background-color: white; */
+  align-self: center;
+  width: 70%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.trainings-list {
+  background-color: white;
+
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-inline: 1rem;
+}
+
+.training {
+  display: flex;
+  gap: 40px;
+  /* grid-template-columns: 2fr 5fr; */
+  padding-block: 24px;
+  border-bottom: 2px solid #ac252b;
+}
+
+.training:last-of-type {
+  border-bottom: none;
+}
+
+.training-img {
+  min-width: 500px !important;
+  height: 250px;
+}
+
+.training:nth-child(even) img {
+  order: 1;
+}
