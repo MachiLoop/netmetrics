@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css" />
+    <script src="splide-4.1.3/dist/js/splide.min.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide");
+        // splide.mount();
+      });
+    </script>
+    <script src="splide.js" defer></script>
+
     <title>Netmetric</title>
   </head>
   <style>
@@ -18,7 +29,7 @@
           <img
             src="/images/nav/company-logo.png"
             alt=""
-            style="height: 80px; aspect-ratio: 1"
+            style="height: 100px; aspect-ratio: 1"
           />
         </div>
         <nav>
@@ -40,6 +51,7 @@
       </header>
       <main>
         <section class="intro-section">
+          <!-- <h1>Who are we?</h1> -->
           <p>
             We are a globally recognized IT education and training company.Our
             core business focuses on providing Information Technology (IT)
@@ -49,52 +61,55 @@
             levels of the economy, and propose holistic solutions based on ICT
             development and appropriate software solutions.
           </p>
+          <button class="learnbtn">Learn More</button>
         </section>
         <section class="trainings-section">
+          <h1 class="section-heading">Technologies we teach</h1>
           <div class="splide">
             <div class="splide__track">
               <ul class="splide__list">
-                <li>
+                <li class="splide__slide">
                   <img src="/images/trainings/CCNA.png" alt="" />
-                  <a href="">Cisco Certified Network Associate</a>
+                  <!-- <a href="">Cisco Certified Network Associate</a> -->
                 </li>
-                <li>
+                <li class="splide__slide">
                   <img src="/images/trainings/linux.jpg" alt="" />
-                  <a href="">Linux</a>
+                  <!-- <a href="">Linux</a> -->
                 </li>
-                <li>
+                <li class="splide__slide">
                   <img
                     src="/images/trainings/digital-marketing-for-small-businesses.jpg"
                     alt=""
                   />
-                  <a href="">Digital Marketing</a>
+                  <!-- <a href="">Digital Marketing</a> -->
                 </li>
-                <li>
+                <!-- <li class="splide__slide">
                   <img src="/images/trainings/e-medicine.jpg" alt="" />
                   <a href="">E-medical</a>
-                </li>
-                <li>
+                </li> -->
+                <li class="splide__slide">
                   <img src="/images/trainings/webdev.jpg" alt="" />
-                  <a href="">Web Developement</a>
+                  <!-- <a href="">Web Developement</a> -->
                 </li>
-                <li>
+                <li class="splide__slide">
                   <img src="/images/trainings/sage.png" alt="" />
-                  <a href="">Sage 50</a>
+                  <!-- <a href="">Sage 50</a> -->
                 </li>
-                <li>
+                <li class="splide__slide">
                   <img src="/images/trainings/python.png" alt="" />
-                  <a href="">Python Programming</a>
+                  <!-- <a href="">Python Programming</a> -->
                 </li>
-                <li>
+                <li class="splide__slide">
                   <img src="/images/trainings/data science.jpg" alt="" />
-                  <a href="">Data Science</a>
+                  <!-- <a href="">Data Science</a> -->
                 </li>
               </ul>
             </div>
           </div>
         </section>
         <section class="initiatives-section">
-          <div class="initiative-1">
+          <h1 class="section-heading">Our Projects</h1>
+          <div class="initiative-1 initiative">
             <img src="/images/programs/ict-children.png" alt="" />
             <div>
               <h1>
@@ -110,7 +125,7 @@
               </p>
             </div>
           </div>
-          <div class="initiative-2">
+          <div class="initiative-2 initiative">
             <img src="/images/programs/ict-senior-citizens.png" alt="" />
             <div>
               <h1>ICT 4 Senior Citizens</h1>
@@ -123,7 +138,7 @@
               </p>
             </div>
           </div>
-          <div class="initiative-3">
+          <div class="initiative-3 initiative">
             <img src="/images/programs/smart-solutions.png" alt="" />
             <div>
               <h1>ICT4ALL "THE SMART TRAINING"</h1>
@@ -131,16 +146,21 @@
                 ICT4ALL "THE SMART TRAINING" is a comprehensive ICT security and
                 cyber security program aimed at producing 100,000 professionals
                 in Nigeria who can effectively integrate and leverage computer
-                security and its applications. The program emphasizes
-                practicality, economy, safety, standards, comfort, and
-                aesthetics in ... <a href="">Read more</a>
+                security and its applications.... <a href="">Read more</a>
               </p>
             </div>
           </div>
         </section>
       </main>
       <footer>
+        <div class="initiatives-quicklink">
+          <h2>Quick Links</h2>
+          <a href="">ICT4ALL Children</a>
+          <a href="">ICT4ALL senior citizens</a>
+          <a href="">ICT4ALL smart solutions</a>
+        </div>
         <div class="contact-info">
+          <h2>Contact us</h2>
           <p>Phone: 07031041441, 08105461125, 08110346189</p>
           <p>Email: netmetricindian@yahoo.clom, info@netmetric.com.ng</p>
         </div>
