@@ -4,3 +4,43 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-block: 60px;
+}
+
+.gallery-wrapper h1 {
+  align-self: center;
+  font-size: 48px;
+  color: #ac282b;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-intro {
+  background-image: url(/images/bg5.jpg);
+  height: 600px;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-intro h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-images img {
+  width: 100%;
+  height: 220px;
+}
