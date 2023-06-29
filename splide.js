@@ -5,6 +5,8 @@ var splide = new Splide(".splide", {
   type: "loop",
   perPage: 1,
   autoplay: true,
+  speed: 10,
+  fade: true,
 });
 splide.mount();
 // });

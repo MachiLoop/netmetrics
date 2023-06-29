@@ -7,8 +7,8 @@
 
 main {
   margin-bottom: 150px;
-  background-color: #f8f7f3;
-  padding-top: 12rem;
+  /* background-color: #f8f7f3; */
+  /* padding-top: 12rem; */
   display: flex;
   flex-direction: column;
   /* background-color: white; */
@@ -16,11 +16,23 @@ main {
 
 .training-intro {
   /* background-color: white; */
+  background-image: url(/images/bg6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  filter: blur(0.4px);
+  padding-inline: 20px;
   align-self: center;
-  width: 70%;
+  width: 100%;
   text-align: center;
   font-size: 20px;
   line-height: 28px;
+  /* padding-top: 15rem; */
+  /* padding-bottom: 15rem; */
+  height: 700px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 .trainings-list {
@@ -62,6 +74,11 @@ main {
   .training {
     flex-direction: column;
   }
+
+  .training-intro {
+    font-size: 16px;
+  }
+
   .training-img {
     max-width: 100%;
     min-width: auto;
