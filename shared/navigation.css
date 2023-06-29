@@ -1,3 +1,13 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
 header {
   /* background-image: url(images/bg.jpg); */
   /* background-repeat: no-repeat; */
@@ -26,6 +36,34 @@ header a {
 header nav {
   display: flex;
   gap: 1rem;
+}
+
+.company-logo img {
+  height: 100px;
+  aspect-ratio: 1;
+}
+
+.dropbtn {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  right: 2rem;
+  z-index: 1;
+  padding-block: 1.5rem;
+  padding-inline: 0.8rem;
+}
+
+.drop-down:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (max-width: 654px) {
