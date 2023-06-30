@@ -60,3 +60,18 @@ main {
   font-size: 18px;
   line-height: 24px;
 }
+
+@media (max-width: 864px) {
+  .about-intro h1 {
+    font-size: 45px;
+  }
+
+  .about-content > div > h2 {
+    font-size: 32px;
+  }
+
+  .about-content > div > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
