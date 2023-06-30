@@ -75,8 +75,64 @@ header nav {
   gap: 10px;
 }
 
+.hamburger {
+  display: none;
+}
+
 @media (max-width: 654px) {
   header nav {
+    padding-top: 6rem;
+    flex-direction: column;
+    background-color: #f8f7f3;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 40%;
+    gap: 24px;
+    transform: translateX(100%);
+    transition: transform 300ms ease-in;
+    z-index: 1000;
+    /* display: none; */
+  }
+
+  header nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  header nav a,
+  .dropbtn {
+    padding-inline-start: 1rem;
+    /* padding-block: 0.3rem; */
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    background-color: inherit;
+    right: 2rem;
+    z-index: 1;
+    padding-block: 0rem;
+    padding-inline: 0rem;
+    gap: 24px;
+  }
+
+  .drop-down:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .dropbtn {
     display: none;
+  }
+
+  .hamburger {
+    display: initial;
+    position: absolute;
+    right: 24px;
+    cursor: pointer;
+    z-index: 10000;
   }
 }

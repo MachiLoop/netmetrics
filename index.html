@@ -15,14 +15,14 @@
       });
     </script>
     <script src="splide.js" defer></script>
-
+    <script src="/shared/navigation.js" defer></script>
     <title>Netmetric</title>
   </head>
   <style>
-    img {
+    /* img {
       height: 80px;
       aspect-ratio: 1;
-    }
+    } */
   </style>
   <body>
     <div class="container">
@@ -34,7 +34,7 @@
             style="height: 100px; aspect-ratio: 1"
           />
         </div>
-        <nav>
+        <nav data-visible="false">
           <a href="">Home</a>
           <a href="/training/training.html">Programs</a>
           <div class="drop-down">
@@ -50,6 +50,9 @@
           <a href="/gallery/gallery.html">Gallery</a>
           <a href="">About us</a>
         </nav>
+        <div class="hamburger">
+          <img src="/images/nav/icon-menu.svg" alt="" />
+        </div>
       </header>
       <main>
         <section class="intro-section">
