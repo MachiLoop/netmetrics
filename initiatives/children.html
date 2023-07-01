@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="/shared/navigation.css" />
     <link rel="stylesheet" href="/shared/footer.css" />
     <link rel="stylesheet" href="children.css" />
+    <link rel="stylesheet" href="/splide-4.1.3/dist/css/splide.min.css" />
+    <script src="/splide-4.1.3/dist/js/splide.min.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // var splide = new Splide(".splide");
+        // var splideIntro = new Splide(".splide-0");
+      });
+    </script>
+    <script src="initiativesplide.js" defer></script>
     <script src="/shared/navigation.js" defer></script>
     <title>ict4Children</title>
   </head>
@@ -40,9 +49,26 @@
         </div>
       </header>
       <main>
-        <div class="initiative-intro">
-          <h1>Youths and Children ICT4ALL</h1>
-        </div>
+        <section class="intro-section">
+          <div class="splide" id="first-splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="/images/bg8.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/bg9.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/bg10.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="initiative-intro">
+            <h1>Youths and Children ICT4ALL</h1>
+          </div>
+        </section>
         <div class="initiative-content">
           <div class="project-overview">
             <h2>Project Overview</h2>

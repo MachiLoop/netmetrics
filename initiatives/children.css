@@ -9,17 +9,38 @@ main {
   margin-bottom: 400px;
 }
 
-.initiative-intro {
-  background-image: url(/images/bg5.jpg);
-  height: 700px;
+.intro-section {
+  /* background-image: url(/images/bg5.jpg);
   background-position: center;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+  position: relative;
+}
+
+#first-splide {
+  max-height: 100%;
+  width: 100%;
+}
+
+#first-splide img {
+  height: 700px;
+  width: 100vw;
+  filter: blur(0.1rem);
+}
+
+.initiative-intro {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  left: 0px;
+  right: 0px;
+  margin-inline: auto;
 }
 
 .initiative-intro h1 {
