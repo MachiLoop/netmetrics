@@ -9,17 +9,38 @@ main {
   margin-bottom: 400px;
 }
 
-.about-intro {
-  background-image: url(/images/bg5.jpg);
+.intro-section {
+  /* background-image: url(/images/bg5.jpg); */
+  /* background-position: center; */
+  /* background-size: 100% 100%; */
+  /* background-repeat: no-repeat; */
   height: 700px;
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+  position: relative;
+}
+
+#first-splide {
+  max-height: 100%;
+  width: 100%;
+}
+
+#first-splide img {
+  height: 700px;
+  width: 100vw;
+  filter: blur(0.1rem);
+}
+
+.about-intro {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  left: 0px;
+  right: 0px;
+  margin-inline: auto;
 }
 
 .about-intro h1 {
@@ -31,7 +52,7 @@ main {
   flex-direction: column;
   gap: 40px;
   padding-inline: 1.5rem;
-  margin-top: 160px;
+  margin-top: 120px;
 }
 
 .about-content > div {
