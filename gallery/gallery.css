@@ -5,6 +5,10 @@
   font-family: "Montserrat";
 }
 
+main {
+  margin-bottom: 220px;
+}
+
 .gallery-wrapper {
   display: flex;
   flex-direction: column;
@@ -75,6 +79,10 @@
   .gallery-intro h1 {
     font-size: 48px;
     color: white;
+  }
+
+  .gallery-wrapper h1 {
+    font-size: 32px;
   }
 
   .gallery-images {

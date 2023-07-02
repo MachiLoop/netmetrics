@@ -84,12 +84,13 @@ footer {
   background-color: #db1a24;
   outline: none;
   border: none;
-  height: 40px;
   margin-top: 2rem;
   border-radius: 10px;
   padding-inline: 1rem;
+  padding-block: 12px;
   color: white;
   align-self: flex-start;
+  display: inline-block;
 }
 
 .trainings-section {
@@ -188,11 +189,16 @@ footer {
   }
 
   .intro-section p {
-    font-size: 16px;
+    font-size: 14px;
+    padding-right: 1rem;
   }
 
   .splide {
     width: 90%;
+  }
+
+  #second-splide {
+    width: 100%;
   }
 
   .section-heading {
@@ -215,16 +221,5 @@ footer {
   .initiative-1,
   .initiative-2 {
     padding-bottom: 40px;
-  }
-
-  footer {
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-  }
-
-  .contact-info {
-    align-items: center;
-    text-align: center;
   }
 }

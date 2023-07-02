@@ -27,7 +27,8 @@ footer {
     align-items: center;
   }
 
-  .contact-info {
+  .contact-info,
+  .initiatives-quicklink {
     align-items: center;
     text-align: center;
   }
