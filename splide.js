@@ -5,16 +5,21 @@ var splide = new Splide("#second-splide", {
   drag: "free",
   snap: true,
   perPage: 3,
+  breakpoints: {
+    864: {
+      perPage: 2,
+    },
+  },
 });
 
-splideIntro = new Splide("#first-splide", {
-  type: "loop",
-  autoplay: true,
-  speed: 5,
-  fade: true,
-  arrows: false,
-  pagination: false,
-});
+// splideIntro = new Splide("#first-splide", {
+//   type: "loop",
+//   autoplay: true,
+//   speed: 5,
+//   fade: true,
+//   arrows: false,
+//   pagination: false,
+// });
 
 splide.mount();
-splideIntro.mount();
+// splideIntro.mount();

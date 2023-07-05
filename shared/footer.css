@@ -1,10 +1,16 @@
 footer {
   background-color: #db1a24;
-  /* background-color: #d86733; */
+  /* background-color: #6a0809; */
+  background-color: #a70100;
   display: flex;
   justify-content: space-around;
   padding-block: 4rem;
+  color: #f9f8fa;
   /* margin-top: 40px; */
+}
+
+footer a {
+  color: #f9f8fa;
 }
 
 .initiatives-quicklink {
