@@ -1,15 +1,11 @@
 // import Splide from "/splide-4.1.3";
 
-// document.addEventListener("DOMContentLoaded", function () {
 var splide = new Splide("#second-splide", {
   type: "loop",
-  perPage: 1,
-  autoplay: true,
-  speed: 10,
-  fade: true,
-  pagination: false,
+  drag: "free",
+  snap: true,
+  perPage: 3,
 });
-// });
 
 splideIntro = new Splide("#first-splide", {
   type: "loop",

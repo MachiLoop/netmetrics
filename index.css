@@ -34,7 +34,7 @@ footer {
   /* background-position-y: -50px; */
   /* background-color: #ac252b; */
   /* background-color: hsl(207, 100%, 98%); */
-  background-color: #f8f7f3;
+  /* background-color: #f8f7f3; */
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -42,6 +42,7 @@ footer {
   position: relative;
   /* background-color: #00324b; */
   padding-inline: 0px;
+  background-color: black;
 }
 
 .intro-section__content {
@@ -57,13 +58,13 @@ footer {
 
 #first-splide img {
   height: 700px;
-  width: 100vw;
-  filter: blur(0.1rem);
+  width: 100%;
+  opacity: 0.5;
+  /* object-fit: cover; */
 }
 
 .intro-section p {
   color: white;
-  /* margin-top: 10rem; */
 }
 
 .section-heading {
@@ -98,26 +99,38 @@ footer {
   /* background-color: #ac252b; */
   margin-top: 3rem;
   padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 44% 55%;
+  gap: 10px;
+  align-items: center;
   /* margin-inline: 40px; */
   /* background-color: #002a46; */
   /* background-color: #4080aa; */
   background-color: white;
+  padding-inline: 2.5rem;
   /* background-image: none; */
+}
+
+.trainings-section .section-heading {
+  font-size: 40px;
+  justify-self: flex-start;
 }
 
 #second-splide {
   /* height: 600px; */
-  width: 60%;
-  margin: 0px auto;
+  /* width: auto; */
+  max-width: 100%;
+  /* margin: 0px auto; */
   /* overflow: visible; */
   padding-block: 4rem;
 }
 
 #second-splide .splide__slide img {
   /* height: 600px; */
-  height: 400px;
+  height: 140px;
   width: 100%;
-  /* object-fit: contain; */
+  padding-inline: 0.5rem;
+  /* object-fit: cover; */
 }
 
 #second-splide .splide__slide {
@@ -139,31 +152,71 @@ footer {
   bottom: 2em !important;
 }
 
+#second-splide .splide__pagination__page:active,
+#second-splide .splide__pagination__page:hover,
+#second-splide .splide__pagination__page.is-active {
+  background-color: #ac252b;
+}
+
 .initiatives-section {
   display: flex;
+  gap: 60px;
   flex-direction: column;
   width: 100%;
   margin-inline: auto;
   background-color: white;
-  background-color: #f8f7f3;
-  margin-top: 6rem;
+  /* background-color: #e9ecef; */
+  background-color: #f8f9fa;
+  background-image: url(/images/bg9.jpg) !important;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-top: 10rem;
   background-image: none;
   padding-bottom: 8rem;
+  margin-bottom: 200px;
+  /* transform: translateY(100%); */
+}
+
+.initiatives-section .section-heading {
+  color: white;
+}
+
+.initiatives-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .initiative {
   display: grid;
   height: 400px;
-  grid-template-columns: 2fr 6fr;
+  height: auto;
+  max-width: 700px;
+  background-color: white;
+  /* border: 1px solid #ac252b; */
+  /* grid-template-columns: 2fr 6fr; */
   gap: 40px;
   /* width: 0%; */
   /* padding-block: 40px; */
   align-items: center;
   margin-inline: auto;
+  padding: 2rem;
+  /* box-shadow: 2px 2px 8px #000; */
+  box-shadow: 0px 4px 8px #000;
+  /* border-radius: 12px; */
+}
+
+.initiative-3 {
+  /* justify-self: center; */
+  /* margin-inline: auto; */
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .initiative img {
-  height: 220px;
+  height: 320px;
   /* width: 400px; */
   width: 100%;
   /* aspect-ratio: 1; */
@@ -180,17 +233,27 @@ footer {
 
 .initiative-1,
 .initiative-2 {
-  border-bottom: 2px solid #ac252b;
+  /* border-bottom: 2px solid #ac252b; */
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 864px) {
   .intro-section {
-    padding-top: 48px;
+    /* padding-top: 48px; */
   }
 
   .intro-section p {
     font-size: 14px;
     padding-right: 1rem;
+  }
+
+  .trainings-section {
+    grid-template-columns: initial;
+  }
+
+  .trainings-section .section-heading {
+    font-size: 32px;
+    justify-self: center;
   }
 
   .splide {
@@ -207,6 +270,18 @@ footer {
 
   .initiatives-section {
     gap: 40px;
+  }
+
+  .initiatives-list {
+    grid-template-columns: initial;
+    gap: 40px;
+  }
+
+  .initiative-3 {
+    /* justify-self: center; */
+    /* margin-inline: auto; */
+    grid-column-start: initial;
+    grid-column-end: initial;
   }
 
   .initiative {
