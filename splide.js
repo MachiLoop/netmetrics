@@ -9,6 +9,9 @@ var splide = new Splide("#second-splide", {
     864: {
       perPage: 2,
     },
+    400: {
+      // perPage: 1,
+    },
   },
 });
 

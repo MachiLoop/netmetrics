@@ -60,7 +60,7 @@ header nav {
   position: absolute;
   background-color: #fff;
   right: 2rem;
-  z-index: 1;
+  z-index: 1000;
   padding-block: 1.5rem;
   padding-inline: 0.8rem;
 }

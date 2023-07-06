@@ -262,23 +262,27 @@ footer {
 
   .trainings-section {
     grid-template-columns: initial;
+    /* max-width: 100%; */
+    justify-content: center;
   }
 
   .trainings-section .section-heading {
-    font-size: 32px;
+    font-size: 26px;
     justify-self: center;
   }
 
-  .splide {
-    width: 90%;
+  #second-splide {
+    max-width: 90%;
+    margin-inline: auto;
+    padding-block: 2rem;
   }
 
-  #second-splide {
-    width: 100%;
+  #second-splide .splide__pagination {
+    bottom: 0px !important;
   }
 
   .section-heading {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .trainings-section .section-heading img {
@@ -287,6 +291,7 @@ footer {
 
   .initiatives-section {
     gap: 40px;
+    padding-inline: 1.5rem;
   }
 
   .initiatives-list {
@@ -313,5 +318,23 @@ footer {
   .initiative-1,
   .initiative-2 {
     padding-bottom: 40px;
+  }
+
+  .initiative img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .initiative p {
+    font-size: 14px;
+  }
+
+  .initiative-1 h1 {
+    font-size: 16px;
   }
 }
