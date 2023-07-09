@@ -14,7 +14,7 @@ main {
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat; */
-  height: 700px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ main {
 }
 
 #first-splide img {
-  height: 700px;
+  height: 230px;
   width: 100vw;
   filter: blur(0.1rem);
 }
@@ -52,7 +52,14 @@ main {
   flex-direction: column;
   gap: 40px;
   padding-inline: 1.5rem;
-  margin-top: 160px;
+  margin-top: 40px;
+}
+
+.card {
+  box-shadow: 2px 4px 10px hsl(0, 0%, 0%, 0.4);
+  border-left: 2px solid #ac282b;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
 }
 
 .initiative-content > div {
@@ -72,14 +79,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.initiative-content > div p {
-  padding-inline-start: 1rem;
-
-  border-left: 4px solid #ac282b;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .initiative-content .ict-benefits h2 {
@@ -144,10 +145,16 @@ main {
   }
 
   .overview-images img {
-    height: 220px;
+    height: 150px;
   }
 
   .conclusion {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .conclusion {
+    font-size: 12px;
   }
 }

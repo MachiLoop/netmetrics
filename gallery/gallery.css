@@ -27,7 +27,7 @@ main {
   /* background-position: center; */
   /* background-size: 100% 100%; */
   /* background-repeat: no-repeat; */
-  height: 700px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +41,7 @@ main {
 }
 
 #first-splide img {
-  height: 700px;
+  height: 230px;
   width: 100vw;
   filter: blur(0.1rem);
 }
