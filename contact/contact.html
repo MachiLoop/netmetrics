@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/shared/navigation.css" />
+    <link rel="stylesheet" href="/shared/footer.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="/splide-4.1.3/dist/css/splide.min.css" />
+    <script src="/splide-4.1.3/dist/js/splide.min.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // var splide = new Splide(".splide");
+        // var splideIntro = new Splide(".splide-0");
+      });
+    </script>
+    <script src="contactsplide.js" defer></script>
+    <script src="/shared/navigation.js" defer></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="company-logo">
+          <img
+            src="/images/nav/company-logo.png"
+            alt=""
+            style="height: 100px; aspect-ratio: 1"
+          />
+        </div>
+        <nav data-visible="false">
+          <a href="/index.html">Home</a>
+          <a href="/training/training.html">Programs</a>
+          <div class="drop-down">
+            <button class="dropbtn">
+              Initiatives <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/initiatives/children.html">Children ICT4ALL</a>
+              <a href="/initiatives/seniorcitizens.html"
+                >ICT 4 Senior Citizens</a
+              >
+              <a href="/initiatives/smartsecurity.html"
+                >ICT4ALL "THE SMART TRAINING"</a
+              >
+            </div>
+          </div>
+          <a href="/gallery/gallery.html">Gallery</a>
+          <a href="/About/about.html">About us</a>
+          <a href="/contact/contact.html">Contact</a>
+        </nav>
+        <div class="hamburger">
+          <img src="/images/nav/icon-menu.svg" alt="" />
+        </div>
+      </header>
+      <main>
+        <section class="intro-section">
+          <div class="splide" id="first-splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="/images/bg8.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/bg9.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/bg10.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-intro">
+            <h1>Contact us</h1>
+          </div>
+        </section>
+        <section class="contact-content">
+          <div class="form-section">
+            <h1>Get in touch with us, TODAY!</h1>
+            <form action="">
+              <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" />
+              </div>
+              <div class="field">
+                <label for="subject">Subject:</label>
+                <input type="text" />
+              </div>
+              <div class="field message-field">
+                <label for="message">Message</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <button>Submit</button>
+            </form>
+          </div>
+          <div class="contact-details">
+            <img
+              src="/images/Contact-Illustration.jpg"
+              alt=""
+              class="illustration"
+            />
+            <div class="details-list">
+              <div>
+                <img src="/images/phone-icon.jpg" alt="" class="icon" />
+                <p>07031041441, 08105461125, 08110346189</p>
+              </div>
+              <div>
+                <img src="/images/email-icon.png" alt="" class="icon" />
+                <p>netmetricindian@yahoo.com</p>
+              </div>
+              <div>
+                <img src="/images/email-icon.png" alt="" class="icon" />
+                <p>info@netmetric.com.ng</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="initiatives-quicklink">
+          <h2>Quick Links</h2>
+          <a href="/initiatives/children.html">ICT4ALL Children</a>
+          <a href="/initiatives/seniorcitizens.html">ICT4ALL senior citizens</a>
+          <a href="/initiatives/smartsecurity.html">ICT4ALL smart solutions</a>
+        </div>
+        <div class="contact-info">
+          <h2>Contact us</h2>
+          <p>Phone: 07031041441, 08105461125, 08110346189</p>
+          <p>Email: netmetricindian@yahoo.com, info@netmetric.com.ng</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
