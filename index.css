@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   /* padding-inline: 1.5rem; */
   /* background-image: url(images/bg.jpg); */
